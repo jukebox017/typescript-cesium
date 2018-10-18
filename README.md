@@ -1,27 +1,38 @@
 # TypescriptCesium
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.5.
+## The Problem
+
+`import cesium from 'cesium'` doesn't work out-of-the-box with Angular 6 (at the time of this writing).
+
+Until then, this workaround may be useful.
+
+## Workaround
+
+1. Follow the steps outlined in this blog post: [https://cesium.com/blog/2018/03/12/cesium-and-angular](https://cesium.com/blog/2018/03/12/cesium-and-angular/)
+
+In a nutshell:
+
+- `yarn add cesium @types/cesium`
+- Add Cesium assets to angular.json
+- `declare var Cesium;` to tell the typescript compiler that the Cesium variable does indeed exist
+- Add a `CESIUM_BASE_URL` variable to main.ts
+- Instantiate the Cesium Viewer to display Cesium
+
+2. Add a [triple-slash directive](https://www.typescriptlang.org/docs/handbook/triple-slash-directives.html) for `@types/cesium` to the file(s) that invoke Cesium:
+
+```
+<reference path="../path/to/node_modules/@types/cesium/index.d.ts" />
+```
+
+3. Start typing `Cesium` and intellisense will start suggesting some stuff!
+
+![Typescript and Cesium](typescript-cesium.png "Typescript and Cesium")
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- `ng serve`
+- Navigate to `http://localhost:4200/`
 
-## Code scaffolding
+## Misc
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.5.

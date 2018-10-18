@@ -1,4 +1,4 @@
-# TypescriptCesium
+# Typescript + Cesium + Angular 6
 
 ## The Problem
 

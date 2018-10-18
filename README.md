@@ -26,7 +26,7 @@ In a nutshell:
 
 3. Intellisense should now have suggestions for Cesium.
 
-![Typescript and Cesium](typescript-cesium.png "Typescript and Cesium")
+![Typescript and Cesium and Angular](typescript-cesium-angular.png "Typescript and Cesium and Angular")
 
 ## Development server
 

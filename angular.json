@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "typescript-cesium": {
+    "typescript-cesium-angular": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/typescript-cesium",
+            "outputPath": "dist/typescript-cesium-angular",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -58,18 +58,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "typescript-cesium:build"
+            "browserTarget": "typescript-cesium-angular:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "typescript-cesium:build:production"
+              "browserTarget": "typescript-cesium-angular:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "typescript-cesium:build"
+            "browserTarget": "typescript-cesium-angular:build"
           }
         },
         "lint": {
@@ -87,5 +87,5 @@
       }
     }
   },
-  "defaultProject": "typescript-cesium"
+  "defaultProject": "typescript-cesium-angular"
 }

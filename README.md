@@ -2,9 +2,9 @@
 
 ## The Problem
 
-`import cesium from 'cesium'` doesn't work out-of-the-box with Angular 6 (at the time of this writing).
+`import cesium from 'cesium'` doesn't work out-of-the-box with Angular 6 (at the time of this writing), which means that the `@types/cesium` type definition file isn't used :persevere:
 
-Until that works, this workaround may be useful.
+Until that works, this workaround may be useful. :smiley:
 
 ## Workaround
 

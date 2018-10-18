@@ -12,7 +12,7 @@ Until that works, this workaround may be useful. :smiley:
 
 In a nutshell:
 
-- `yarn add cesium @types/cesium`
+- `yarn add cesium && yarn add @types/cesium -D`
 - Add Cesium assets to angular.json
 - `declare var Cesium;` to tell the typescript compiler that the Cesium variable does indeed exist
 - Add a `CESIUM_BASE_URL` variable to main.ts

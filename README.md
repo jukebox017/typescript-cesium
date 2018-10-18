@@ -6,7 +6,7 @@
 
 Until that works, this workaround may be useful. :smiley:
 
-## Workaround
+## The Workaround
 
 1. Follow the steps outlined in this blog post: [https://cesium.com/blog/2018/03/12/cesium-and-angular](https://cesium.com/blog/2018/03/12/cesium-and-angular/)
 

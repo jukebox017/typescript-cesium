@@ -4,7 +4,7 @@
 
 `import cesium from 'cesium'` doesn't work out-of-the-box with Angular 6 (at the time of this writing).
 
-Until then, this workaround may be useful.
+Until that works, this workaround may be useful.
 
 ## Workaround
 
@@ -24,7 +24,7 @@ In a nutshell:
 <reference path="../path/to/node_modules/@types/cesium/index.d.ts" />
 ```
 
-3. Start typing `Cesium` and intellisense will start suggesting some stuff!
+3. Intellisense should now have suggestions for Cesium.
 
 ![Typescript and Cesium](typescript-cesium.png "Typescript and Cesium")
 
